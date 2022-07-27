@@ -101,7 +101,7 @@
     font-weight: 900;
   }
   .hero-section .dancing{
-      font-family: 'Dancing Script', cursive;
+    font-family: sans-serif, cursive;
     letter-spacing: 1px;
     color: #ffffff;
     font-size: 26px;
