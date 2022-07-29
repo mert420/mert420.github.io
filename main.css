@@ -1,4 +1,7 @@
 
+/* Çok mu beğendin? */
+
+
   @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
   @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 
@@ -17,10 +20,13 @@
   }
   a {
     cursor: pointer;
+    text-decoration: none;
   }
   a:hover {
     text-decoration: none;
   }
+
+
   ::selection {
     color: #c4c3ca;
     background-color: #000;
@@ -41,6 +47,17 @@ a:hover {
     color: rgb(250, 156, 214);
     font-size: 23px;
     transition: 0.5s;
+  }
+
+  a#ig:hover {
+    border: none;
+    border-radius: 25%;
+    font-size: 23px;
+    transition: 0.5s;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  }
+  a#yt:hover{
+    color: rgb(247, 35, 35);
   }
 
   .cursor,
@@ -112,7 +129,15 @@ a:hover {
     font-size: 5vw;
     line-height: 1;
     font-weight: 900;
+
+
+   /* -webkit-animation: rainbow 5s infinite; 
+    -ms-animation: rainbow 5s infinite;
+    animation: rainbow 5s infinite;   */
+
+
   }
+  
   .hero-section .dancing{
     font-family: sans-serif, cursive;
     letter-spacing: 1px;
@@ -513,4 +538,47 @@ a:hover {
       opacity: 0.8;
       border-radius: 50%;
       box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+  }
+
+
+
+
+  @-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+  }
+  @-ms-keyframes rainbow{
+     0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+  }
+  @keyframes rainbow{
+      0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
   }
