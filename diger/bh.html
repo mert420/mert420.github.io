@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <style>
+        *{
+            font-family: 'Consolas', monospace;
+        }
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container{
+            text-align: center;
+            position: fixed;
+            top: 40%;
+        }
+        input,input:focus{
+            background-color:black !important;
+            color: white;
+        }
+        #text{
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #out{
+            margin-top: 40px;
+            font-size: 46px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function mBHC() {
+            var m = document.getElementById("text").value;
+
+            var bHM = m.toUpperCase();
+
+            document.getElementById("out").innerHTML = bHM;
+        }
+        setInterval(function() {
+            document.getElementById("text").focus();
+        }, 5);
+    </script>
+</head>
+<body oncontextmenu="return false;">
+    <div id="container">
+
+    <label for="text"></label>
+    <input type="text" id="text" oninput="mBHC()">
+
+    <p id="out"></p>
+</div>
+</body>
+</html>
